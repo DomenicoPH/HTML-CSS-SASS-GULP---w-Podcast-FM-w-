@@ -58,6 +58,13 @@
     background-position: top center;
 }
 
+@mixin iconoBg($url){
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: 50% 2rem;
+    background-size: 10rem;
+}
+
 @mixin headingBorder($colorTexto, $colorLinea){
     font-size: 3.6rem;
     display: inline-block;

@@ -2,6 +2,12 @@
 @use 'base/mixins' as m;
 
 .boton-primario{
-    @include m.boton(v.$primario, v.$secundario);
-    
+    @include m.boton(v.$primario, v.$secundario);   
+}
+
+.boton-plan{
+    @extend .boton-primario;
+    border: 2px solid v.$blanco;
+    margin-top: 2rem;
+    display: block;
 }
